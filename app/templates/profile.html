@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col col-lg-5 col-md-8">
+                <div class="card text-center">
+                    <div class="card-header bg-burgundy text-white">
+                        <img src="{{ url_for('static', filename='../static/img/p3.jpg') }}"
+                            class="card-img img-thumbnail rounded-circle mt-2" alt="...">
+                        <h1 class="card-title font-weight-bold mt-2">Dana Campbell</h1>
+                        <span class="d-block">@dcampbell</span>
+                        <span class="d-block"> Kingston, Jamaica</span>
+                        <span>Joined February 2, 2020</span>
+                    </div>
+                    <div class="card-body bg-none">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste,
+                            repellat blanditiis porro quas nihil corrupti assumenda. Reiciendis, ex incidunt.</p>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <span class="d-block">12</span>
+                                <span>Posts</span>
+                            </div>
+                            <div class="col">
+                                <span class="d-block">200</span>
+                                <span>Following</span>
+                            </div>
+                            <div class="col">
+                                <span class="d-block">500</span>
+                                <span>Followers</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-burgundy text-white font-weight-bold px-4">Follow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
